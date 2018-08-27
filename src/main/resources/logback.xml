@@ -17,6 +17,7 @@
         <!--配置日志路径-->
         <File>F:/eclipse/mine/mmall/logs/mmall.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- /developed/apache-tomcat-7.0.73/logs/mmall.log.%d{yyyy-MM-dd}.gz -->
             <fileNamePattern>/developer/apache-tomcat-7.0.73/logs/mmall.log.%d{yyyy-MM-dd}.gz</fileNamePattern>
             <append>true</append>
             <!-- 最大的存储历史时期，表示存10天 -->
@@ -29,9 +30,12 @@
 
     <!-- 错误日志 -->
     <appender name="error" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <!--<File>d:/mmalllog/error.log</File>-->
+        <!--<File>/developed/apache-tomcat-7.0.73/logs/error.log</File>-->
+        <!-- 当天的日志 -->
         <File>F:/eclipse/mine/mmall/logs/error.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 在服务器端运行的时候，随着时间的推移自动将之前的日志改名并压缩 -->
+            <!-- /developed/apache-tomcat-7.0.73/logs/error.log.%d{yyyy-MM-dd}.gz-->
             <fileNamePattern>F:/eclipse/mine/mmall/logs/error.log.%d{yyyy-MM-dd}.gz</fileNamePattern>
             <append>true</append>
             <maxHistory>10</maxHistory>
