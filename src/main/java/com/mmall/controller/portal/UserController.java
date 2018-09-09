@@ -14,9 +14,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
 
-/**
- * Created by geely
- */
 @Controller
 @RequestMapping("/user/")
 public class UserController {
@@ -182,34 +179,4 @@ public class UserController {
         }
         return iUserService.getInformation(currentUser.getId());
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

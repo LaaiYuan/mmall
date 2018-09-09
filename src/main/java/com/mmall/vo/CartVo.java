@@ -3,9 +3,6 @@ package com.mmall.vo;
 import java.math.BigDecimal;
 import java.util.List;
 
-/**
- * Created by geely
- */
 public class CartVo {
     // 一个购物车抽象对象，
     // 包括商品，商品总价，是否全选，主图地址

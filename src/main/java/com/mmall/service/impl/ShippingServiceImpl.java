@@ -13,9 +13,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by Administrator on 2018/6/3.
- */
 @Service("iShippingService")
 public class ShippingServiceImpl implements IShippingService {
 

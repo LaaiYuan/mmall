@@ -1,8 +1,5 @@
 package com.mmall.common;
 
-/**
- * Created by geely
- */
 public enum ResponseCode {
 	// 为了规避 魔鬼数字，可以使用枚举类型来表示一些数字代表的意义
 	// 格式：字符串表示(数值，解释)

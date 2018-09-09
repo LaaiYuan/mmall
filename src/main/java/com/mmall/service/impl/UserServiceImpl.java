@@ -13,9 +13,6 @@ import org.springframework.util.StringUtils;
 
 import java.util.UUID;
 
-/**
- * Created by geely
- */
 @Service("iUserService")
 public class UserServiceImpl implements IUserService {
 
@@ -202,7 +199,5 @@ public class UserServiceImpl implements IUserService {
         }
         return ServerResponse.createByError();
     }
-
-
 
 }

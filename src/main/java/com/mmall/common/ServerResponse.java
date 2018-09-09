@@ -5,9 +5,6 @@ import org.codehaus.jackson.map.annotate.JsonSerialize;
 
 import java.io.Serializable;
 
-/**
- * Created by geely
- */
 @JsonSerialize(include =  JsonSerialize.Inclusion.NON_NULL)
 //保证序列化json的时候,如果是null的对象,key也会消失
 public class ServerResponse<T> implements Serializable {
@@ -81,17 +78,4 @@ public class ServerResponse<T> implements Serializable {
     public static <T> ServerResponse<T> createByErrorCodeMessage(int errorCode,String errorMessage){
         return new ServerResponse<T>(errorCode,errorMessage);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

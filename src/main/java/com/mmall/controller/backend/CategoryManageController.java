@@ -16,9 +16,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
 
-/**
- * Created by Administrator on 2018/5/19.
- */
 @Controller
 @RequestMapping("/manage/category")
 public class CategoryManageController {
@@ -29,7 +26,13 @@ public class CategoryManageController {
     @Autowired
     private ICategoryService iCategoryService;
 
-    // 添加品类
+    /**
+     * 添加品类
+     * @param session
+     * @param categoryName
+     * @param parentId
+     * @return
+     */
     @RequestMapping("add_category.do")
     @ResponseBody
     // 当前端没有传递 parentId 时，默认使用根节点 0
@@ -50,7 +53,13 @@ public class CategoryManageController {
         }
     }
 
-    // 更新品类名
+    /**
+     * 更新品类名
+     * @param session
+     * @param categoryId
+     * @param categoryName
+     * @return
+     */
     @RequestMapping("set_category_name.do")
     @ResponseBody
     public ServerResponse setCategoryName(HttpSession session,Integer categoryId,String categoryName){

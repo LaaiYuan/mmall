@@ -16,9 +16,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Set;
 
-/**
- * Created by Administrator on 2018/5/19.
- */
 @Service("iCategoryService")
 public class CategoryServiceImpl implements ICategoryService {
 

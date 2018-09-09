@@ -4,9 +4,6 @@ import com.google.common.collect.Sets;
 
 import java.util.Set;
 
-/**
- * Created by geely
- */
 public class Const {
 
     public static final String CURRENT_USER = "currentUser";
@@ -93,8 +90,6 @@ public class Const {
         String RESPONSE_FAILED = "failed";
     }
 
-
-
     public enum PayPlatformEnum{
         ALIPAY(1,"支付宝");
 
@@ -143,8 +138,4 @@ public class Const {
         }
 
     }
-
-
-
-
 }

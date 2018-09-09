@@ -5,9 +5,6 @@ import com.mmall.common.ServerResponse;
 import com.mmall.pojo.Product;
 import com.mmall.vo.ProductDetailVo;
 
-/**
- * Created by Administrator on 2018/5/19.
- */
 public interface IProductService {
     ServerResponse saveOrUpdateProduct(Product product);
 

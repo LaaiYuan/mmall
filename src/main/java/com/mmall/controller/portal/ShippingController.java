@@ -15,9 +15,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
 
-/**
- * Created by Administrator on 2018/6/3.
- */
 @Controller
 @RequestMapping("/shipping/")
 public class ShippingController {

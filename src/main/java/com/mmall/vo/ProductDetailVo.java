@@ -2,9 +2,6 @@ package com.mmall.vo;
 
 import java.math.BigDecimal;
 
-/**
- * Created by Administrator on 2018/5/20.
- */
 public class ProductDetailVo {
     private Integer  id;
     private Integer categoryId;

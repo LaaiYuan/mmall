@@ -4,9 +4,6 @@ import com.github.pagehelper.PageInfo;
 import com.mmall.common.ServerResponse;
 import com.mmall.pojo.Shipping;
 
-/**
- * Created by Administrator on 2018/6/3.
- */
 public interface IShippingService {
     ServerResponse add(Integer userId, Shipping shipping);
     ServerResponse update(Integer userId, Shipping shipping);

@@ -22,9 +22,6 @@ import javax.servlet.http.HttpSession;
 import java.util.Iterator;
 import java.util.Map;
 
-/**
- * Created by Administrator on 2018/6/7.
- */
 @Controller
 @RequestMapping("/order/")
 public class OrderController{
